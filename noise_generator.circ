@@ -55,10 +55,6 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="2048000.0"/>
-    <comp lib="0" loc="(180,440)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="rgb"/>
-    </comp>
     <comp lib="0" loc="(180,580)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="reset"/>
@@ -67,23 +63,26 @@
     <comp lib="1" loc="(490,420)" name="NOT Gate"/>
     <comp lib="4" loc="(300,250)" name="Counter">
       <a name="appearance" val="classic"/>
+      <a name="max" val="0x7f"/>
+      <a name="width" val="7"/>
     </comp>
     <comp lib="4" loc="(300,320)" name="Counter">
       <a name="appearance" val="classic"/>
+      <a name="max" val="0x7f"/>
+      <a name="width" val="7"/>
     </comp>
     <comp lib="4" loc="(310,410)" name="Random">
       <a name="appearance" val="classic"/>
     </comp>
     <comp lib="5" loc="(500,360)" name="RGB Video">
       <a name="color" val="XTerm256 (8 bit)"/>
-      <a name="height" val="256"/>
       <a name="scale" val="1"/>
-      <a name="width" val="256"/>
     </comp>
-    <wire from="(180,440)" to="(310,440)"/>
     <wire from="(180,580)" to="(380,580)"/>
-    <wire from="(200,260)" to="(200,600)"/>
+    <wire from="(200,260)" to="(200,440)"/>
     <wire from="(200,260)" to="(270,260)"/>
+    <wire from="(200,440)" to="(200,600)"/>
+    <wire from="(200,440)" to="(310,440)"/>
     <wire from="(200,600)" to="(520,600)"/>
     <wire from="(240,530)" to="(250,530)"/>
     <wire from="(250,280)" to="(250,360)"/>
